@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flow - Mind Body Yoga</title>
+
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo4.jpg" class="logo"></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Asanas</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+    
+        <section class="info">
+            <h1 class="c-name">Downward Facing Dog</h1>
+            <h2 class="y-name">Adho Mukha Svanasana</h2>
+            <h3 class="description">Description</h3>
+                <p class="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt ex maxime repellendus nihil dignissimos labore. Aut numquam, delectus hic praesentium impedit tempora doloremque magni placeat dolorum quisquam rerum nostrum?</p>
+            <h3 class="benefits">Benefits</h3>
+                <p class="benefits-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam praesentium in tempora.</p>
+        </section>
+        <section class="big-image">
+            <img class="main-pose" src="images/downward_dog.png">
+        </section>
+        <section class="thumbs">
+            <ul class="poses">
+                <li><img src="images/dancers_pose.png" onclick="imgSlider('images/dancers_pose.png');"></li>
+                <li><img src="images/downward_dog.png" onclick="imgSlider('images/downward_dog.png')"></li>
+                <li><img src="images/pigeon_pose.png" onclick="imgSlider('images/pigeon_pose.png')"></li>
+                <li><img class="special" src="images/upward_dog.png" onclick="imgSlider('images/upward_dog.png')"></li>
+                <li><img src="images/utkatasana.png" onclick="imgSlider('images/utkatasana.png')"></li>
+                <li><img src="images/warrier_two.png" onclick="imgSlider('images/warrier_two.png')"></li>
+            </ul>
+        </section>
+    </main>
+    
+</body>
+    <script type="text/javascript">
+        function imgSlider(picture) {
+            document.querySelector('.main-pose').src = picture; 
+        }
+        
+        
+    </script>
+</html>
